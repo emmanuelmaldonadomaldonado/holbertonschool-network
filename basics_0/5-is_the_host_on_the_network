@@ -6,5 +6,5 @@ COUNT=1 # Number of ping attempts
 if ping -c $COUNT $IP > /dev/null 2>&1; then
   echo "Ping to $IP was successful."
 else
-  echo "Ping to $IP failed."
+  echo "Usage: $IP {IP_ADDRESS}"
 fi
