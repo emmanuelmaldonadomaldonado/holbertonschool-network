@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-#pings an IP address
-IP="8.8.8.8" # Replace with the IP address you want to ping
-COUNT=1 # Number of ping attempts
- 
-if ping -c $COUNT $IP > /dev/null 2>&1; then
-  echo "Ping to $IP was successful."
-else
-  echo Usage: 5-is_the_host_on_the_network {IP_ADDRESS}
+# Write a Bash script that pings an IP address passed as an argument.
+if [ $# -ne 1 ]; then
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+    exit 1
 fi
+ping "$1" -c5
