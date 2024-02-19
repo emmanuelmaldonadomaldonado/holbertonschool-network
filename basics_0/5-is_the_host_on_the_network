@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#pings an IP address
 IP="8.8.8.8" # Replace with the IP address you want to ping
 COUNT=1 # Number of ping attempts
  
